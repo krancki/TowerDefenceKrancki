@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 
-    public float startSpeed = 10f;
+    
     [HideInInspector]
     public float speed = 10f;
 
+    [Header("Values")]
+    public float startSpeed = 10f;
     public int health = 100;
     public int value = 50;
 

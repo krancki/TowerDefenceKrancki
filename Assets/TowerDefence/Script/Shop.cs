@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Shop : MonoBehaviour {
 
+    [Header("Turret Object")]
     public TurrentBlueprint standardTurret;
     public TurrentBlueprint missileLuncher;
     public TurrentBlueprint laserBeamer;
