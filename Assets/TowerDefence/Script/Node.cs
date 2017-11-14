@@ -12,8 +12,15 @@ public class Node : MonoBehaviour {
 
     [Header("Option")]
     BuildManager buildManager;
+
+    [HideInInspector]
     public GameObject turret;
-     
+    [HideInInspector]
+    public TurrentBlueprint turretBlueprint;
+    [HideInInspector]
+    public bool isUpgraded = false;
+
+
     private Renderer rend;
     private Color startColor;
     private void Start()
@@ -46,11 +53,56 @@ public class Node : MonoBehaviour {
         if (!buildManager.CanBuild)
             return;
 
-        buildManager.BuildTurretOn(this);
+        BuildTurret(buildManager.GetTurretToBuild());
 
     }
 
 
+    void BuildTurret(TurrentBlueprint blueprint)
+    {
+        if (PlayerStats.Money < blueprint.cost)
+        {
+
+            Debug.Log("Not enougt money");
+            return;
+        }
+        PlayerStats.Money -= blueprint.cost;
+        turretBlueprint = blueprint;
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition() + new Vector3(0, 2, 0), Quaternion.identity);
+        Destroy(effect, 5f);
+
+        GameObject _turret = (GameObject)Instantiate(blueprint.prefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        Debug.Log("TuretBuild! ");
+
+    }
+
+    public void UpgradeTurret()
+    {
+        if (PlayerStats.Money < turretBlueprint.upgradeCost)
+        {
+
+            Debug.Log("Not enougt money to upgrade that");
+            return;
+        }
+        PlayerStats.Money -= turretBlueprint.upgradeCost;
+
+        //Destroy a old turret
+        Destroy(turret);
+
+        //Create a new upgradeTurret
+        GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, GetBuildPosition() + new Vector3(0, 2, 0), Quaternion.identity);
+        Destroy(effect, 5f);
+
+        GameObject _turret = (GameObject)Instantiate(turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity);
+        turret = _turret;
+
+        isUpgraded = true;
+
+        Debug.Log("TuretUpgrade! ");
+
+    }
 
     private void OnMouseEnter()
     {

@@ -5,14 +5,21 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
 
     private bool doMovment = true;
-
+    private Vector3 nextPos;    
+    
     public float panSpeed = 30f;
     public float panBorderThickness = 10f;
     public float scrollSpeed = 10f;
     public float minY = 10f;
     public float maxY = 70f;
 
-	void Update () {
+
+    private void Start()
+    {
+        nextPos = transform.position;
+    }
+
+    void Update () {
 
         if(GameMenager.gameIsOver)
         {
@@ -49,21 +56,20 @@ public class CameraController : MonoBehaviour {
                 transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
             }
 
-        Vector3 pos = transform.position;
-        float nextPos = transform.position.y;
+       
+
+         Vector3 pos = transform.position;
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll != 0)
         {
-            nextPos -= (scroll * 1000 * scrollSpeed * Time.deltaTime);
-            //pos.y -= scroll * 100 *scrollSpeed * Time.deltaTime;
- 
+            nextPos.y = transform.position.y;
+            nextPos.y -= (scroll * 100 * scrollSpeed * Time.deltaTime);
+            
         }
 
-        pos.y = Mathf.Lerp(pos.y, nextPos, 0.125f);
-
-
-        //pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        pos.y = Mathf.Lerp(pos.y, nextPos.y, 0.125f);
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
         
         transform.position = pos;
 
