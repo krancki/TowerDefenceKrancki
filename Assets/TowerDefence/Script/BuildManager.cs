@@ -24,8 +24,10 @@ public class BuildManager : MonoBehaviour {
     private TurrentBlueprint turretToBuild;
     private Node selectedNode;
 
+    [Header("Effect")]
     public NodeUi nodeUI;
     public GameObject buildEffect;
+    public GameObject destroyEffect;
 
     public bool CanBuild { get { return turretToBuild != null; } }
     public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost; } }
