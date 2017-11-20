@@ -90,7 +90,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1036130437073810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.975381, y: 4.212948, z: 78.62}
+  m_LocalPosition: {x: 8.245419, y: 0, z: 84.12291}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224621093715709130}
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   startSpeed: 20
-  health: 100
+  startHealth: 100
   value: 50
   DestroyEffect: {fileID: 1599817171501068, guid: 79073d22133b02742b1a55a495fe2242,
     type: 2}

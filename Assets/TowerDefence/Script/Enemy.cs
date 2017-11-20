@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour {
     public void TakeDamage(int amount)
     {
         health -= amount;
-        healthBar.fillAmount = health/health;
+        healthBar.fillAmount = health/startHealth;
         if(health <=0)
         {
             Die();
