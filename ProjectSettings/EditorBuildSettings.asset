@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TowerDefence/TowerDefence1.unity
+    path: Assets/TowerDefenceMenu.unity
+    guid: 0882ae5df755ff5449efff1fed4a7d01
+  - enabled: 1
+    path: Assets/TowerDefenceLevel1.unity
     guid: 598109b59539a7d4a8ba3e6ca8c84734

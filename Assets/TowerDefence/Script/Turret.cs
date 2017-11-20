@@ -113,12 +113,12 @@ public class Turret : MonoBehaviour {
     {
 
         //Target lock on
-        Vector3 dir = Target.position - transform.position;
+        Vector3 dir = Target.position - partToRotate.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
 
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation ,lookRotation,Time.deltaTime*turnSpeed).eulerAngles;
 
-        partToRotate.rotation = Quaternion.Euler(rotation.x,rotation.y, 0f);
+        partToRotate.rotation = Quaternion.Euler(rotation.x,rotation.y, 0);
     }
 
 
@@ -150,9 +150,12 @@ public class Turret : MonoBehaviour {
         GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
         Bullet bullet = bulletGO.GetComponent<Bullet>();
+       
+
         if(bullet!=null)
         {
             bullet.Seek(Target);
+            
         }
             
     }
