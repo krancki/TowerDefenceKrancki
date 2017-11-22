@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-    public string levelToLoad = "TowerDefenceLevel1";
+    public string levelToLoad = "TowerDefenceLevelSelect";
 
     public SceneFader sceneFeder;
 

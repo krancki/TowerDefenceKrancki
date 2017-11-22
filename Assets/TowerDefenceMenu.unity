@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e3ffd85ba23a3c48b9f13a5b8f2f64b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: TowerDefenceLevel1
+  levelToLoad: TowerDefenceLevelSelect
   sceneFeder: {fileID: 767866924}
 --- !u!4 &743037964
 Transform:
