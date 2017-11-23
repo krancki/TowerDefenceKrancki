@@ -219,7 +219,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1755890402430418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 51.93997, y: 0, z: 24.298023}
+  m_LocalPosition: {x: 212.12112, y: 3.12, z: 246.89766}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 4186648126026786}
@@ -442,10 +442,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bd6dc69057fbbb408712536cbe09efb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 60
+  range: 70
   fireRate: 1
   fireCountdown: 0
   bulletPrefab: {fileID: 0}
+  shootEffect: {fileID: 0}
   particleImpact: {fileID: 198434119933377422}
   lineRender: {fileID: 120985735897840306}
   impactLight: {fileID: 108842040974321066}
@@ -454,7 +455,7 @@ MonoBehaviour:
   useLaser: 1
   enemyTag: enemy
   firePoint: {fileID: 4058049857367784}
-  turnSpeed: 10
+  turnSpeed: 5
   partToRotate: {fileID: 4034610647307844}
 --- !u!120 &120985735897840306
 LineRenderer:

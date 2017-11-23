@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  startSpeed: 10
+  startSpeed: 20
   startHealth: 100
   value: 50
   DestroyEffect: {fileID: 1599817171501068, guid: 79073d22133b02742b1a55a495fe2242,

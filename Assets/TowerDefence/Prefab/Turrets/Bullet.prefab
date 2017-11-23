@@ -92,8 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1798b72573dc904cb1ebdf299c4ce3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletImpactEffect: {fileID: 1138941923476742, guid: 69303243801d3c14d99f8a47ec1d56be,
+  bulletDestroyEffect: {fileID: 1772996286658410, guid: e2f82aa1cd9f70144a13663ec2c517a7,
+    type: 2}
+  bulletImpactEffect: {fileID: 1138941923476742, guid: 69303243801d3c14d99f8a47ec1d56be,
     type: 2}
   damage: 30
-  speed: 70
+  speed: 50
   explosionRadius: 0
