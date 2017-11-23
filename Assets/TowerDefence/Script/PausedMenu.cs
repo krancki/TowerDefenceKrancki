@@ -7,7 +7,8 @@ public class PausedMenu : MonoBehaviour {
 
 
     public GameObject ui;
-	
+    public SceneFader sceneFader;
+    public string menuScenceName = "TowerDefenceMenu";
 	// Update is called once per frame
 	void Update () {
 
@@ -45,12 +46,14 @@ public class PausedMenu : MonoBehaviour {
     public void Retry()
     {
         Toggle();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }
 
     public void Menu()
     {
-        Debug.Log("Menu");
+        Toggle();
+        sceneFader.FadeTo(menuScenceName);
+
     }
 
 }

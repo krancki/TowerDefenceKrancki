@@ -5,12 +5,12 @@ public class Bullet : MonoBehaviour {
 
 
     private Transform target;
+    private Quaternion lookRotation;
 
+    public GameObject bulletDestroyEffect;
+    public GameObject bulletImpactEffect;
 
-
-    public GameObject BulletImpactEffect;
-
-
+    
     public int damage = 5;
     public float speed = 70f;
     public float explosionRadius = 15f;
@@ -18,19 +18,25 @@ public class Bullet : MonoBehaviour {
     public void Seek(Transform _target)
     {
         target = _target;
-
+        lookRotation = new Quaternion(0, 0, 0, 1);
     }
 
 	// Update is called once per frame
 	void Update () {
+        
 
-        if(target==null)
+        if (target==null)
         {
+            
             Destroy(gameObject);
+            DestroyEffect(lookRotation);
                 return;
         }
 
+       
+        
         Vector3 dir = target.position-transform.position;
+        lookRotation = Quaternion.LookRotation(dir);
 
         float distanceThisFrame = speed * Time.deltaTime;
 
@@ -49,7 +55,7 @@ public class Bullet : MonoBehaviour {
     void HitTarget()
     {
 
-        GameObject effectIns= (GameObject) Instantiate(BulletImpactEffect, transform.position, transform.rotation);
+        GameObject effectIns= (GameObject) Instantiate(bulletImpactEffect, transform.position, transform.rotation);
         Destroy(effectIns,5f);
         if(explosionRadius>0f)
         {
@@ -86,6 +92,17 @@ public class Bullet : MonoBehaviour {
         {
             e.TakeDamage(damage);
         }
+
+    }
+
+    void DestroyEffect(Quaternion _lookRotation)
+    {
+
+
+        GameObject _destroyEffect = (GameObject)Instantiate(bulletDestroyEffect, transform.position, _lookRotation);
+        Destroy(_destroyEffect, 5f);
+
+            
 
     }
 

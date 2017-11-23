@@ -13,6 +13,12 @@ public class CameraController : MonoBehaviour {
     public float minY = 10f;
     public float maxY = 70f;
 
+    [Header("Position of Camera")]
+
+    public float maxZ;
+    public float maxX;
+    public float minZ;
+    public float minX;
 
     private void Start()
     {
@@ -28,25 +34,25 @@ public class CameraController : MonoBehaviour {
         }
         
 
-            if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)
+            if ((Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness) && transform.position.z<=maxZ)
             {
                 transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
             }
+            
 
-
-            if (Input.GetKey("s") || Input.mousePosition.y <= panBorderThickness)
+            if ((Input.GetKey("s") || Input.mousePosition.y <= panBorderThickness) && transform.position.z >= minZ)
             {
                 transform.Translate(Vector3.back * panSpeed * Time.deltaTime, Space.World);
             }
 
 
 
-            if (Input.GetKey("d") || Input.mousePosition.x >= Screen.width - panBorderThickness)
+            if ((Input.GetKey("d") || Input.mousePosition.x >= Screen.width - panBorderThickness ) && transform.position.x <= maxX)
             {
                 transform.Translate(Vector3.right * panSpeed * Time.deltaTime, Space.World);
             }
 
-            if (Input.GetKey("a") || Input.mousePosition.x <= panBorderThickness)
+            if ((Input.GetKey("a") || Input.mousePosition.x <= panBorderThickness) && transform.position.x >= minX)
             {
                 transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
             }

@@ -14,7 +14,7 @@ public class Turret : MonoBehaviour {
     public float fireRate = 1f;
     public float fireCountdown = 0f;
     public GameObject bulletPrefab;
-
+    public GameObject shootEffect;
     [Header("Use Laser")]
     public ParticleSystem particleImpact;
     public LineRenderer lineRender;
@@ -62,17 +62,21 @@ public class Turret : MonoBehaviour {
 
         }
 
-        if(nearestEnemy !=null && shortestDistance<=range)
+        if (nearestEnemy != null && shortestDistance <= range)
         {
-        Target = nearestEnemy.transform;
+            Target = nearestEnemy.transform;
 
         }
+        else
+            Target = null;
 
 
     }
 
 
 	void Update () {
+
+
 
         if (Target == null)
         {
@@ -88,7 +92,9 @@ public class Turret : MonoBehaviour {
             }
             return;
         }
-        LockOnTarget();
+
+        if (!LockOnTarget())
+            return;
 
         if(useLaser)
         {
@@ -109,7 +115,7 @@ public class Turret : MonoBehaviour {
 
 
 	}
-    void LockOnTarget()
+    bool LockOnTarget()
     {
 
         //Target lock on
@@ -117,8 +123,13 @@ public class Turret : MonoBehaviour {
         Quaternion lookRotation = Quaternion.LookRotation(dir);
 
         Vector3 rotation = Quaternion.Lerp(partToRotate.rotation ,lookRotation,Time.deltaTime*turnSpeed).eulerAngles;
-
+        
         partToRotate.rotation = Quaternion.Euler(rotation.x,rotation.y, 0);
+
+        if (Vector3.Angle(partToRotate.transform.forward, dir) <10)   // Checks is  Part To Rotate  looking on target
+                return true;                                         // Return True If Part To Rotate Is looking on target
+
+        return false;
     }
 
 
@@ -147,10 +158,11 @@ public class Turret : MonoBehaviour {
 
         void Shoot()
     {
-        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject _shootEffect = (GameObject)Instantiate(shootEffect, firePoint.position, firePoint.rotation);
+        GameObject _bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
-        Bullet bullet = bulletGO.GetComponent<Bullet>();
-       
+        Bullet bullet = _bulletGO.GetComponent<Bullet>();
+        Destroy(_shootEffect,2f);
 
         if(bullet!=null)
         {

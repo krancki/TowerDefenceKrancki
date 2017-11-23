@@ -6,25 +6,23 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour {
 
-    public Text roundsText;
+    
 
+    public string menuSceneName = "TowerDefenceMenu";
+    public SceneFader sceneFader;
 
-    private void OnEnable()
-    {
-        roundsText.text = PlayerStats.Rounds.ToString();
-
-    }
+    
 
     public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneFader.FadeTo(SceneManager.GetActiveScene().name);
 
             
     }
 
     public void Menu()
     {
-        Debug.Log("Go To menu");
+        sceneFader.FadeTo(menuSceneName);
     }
 
 }

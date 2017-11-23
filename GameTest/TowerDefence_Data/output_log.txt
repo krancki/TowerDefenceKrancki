@@ -1,0 +1,209 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   NVIDIA
+    VRAM:     8096 MB
+    Driver:   23.21.13.8813
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\GRYunity\towerDefence\TowerDefenceKrancki\GameTest\TowerDefence_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.040 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.393315 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: b178 -> priority: 1 
+  Thread -> id: c258 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.061728 ms
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 600.
+Total: 0.499789 ms (FindLiveObjects: 0.037320 ms CreateObjectMapping: 0.040120 ms MarkObjects: 0.348328 ms  DeleteObjects: 0.073397 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.156419 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1373.
+Total: 1.235634 ms (FindLiveObjects: 0.070598 ms CreateObjectMapping: 0.039498 ms MarkObjects: 0.731801 ms  DeleteObjects: 0.392803 ms)
+
+Another Turret Purchased
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Another Turret Purchased
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Missile Launcher Selected
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at WaveSpawner+<SpawnWave>c__Iterator0.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto_Internal(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+WaveSpawner:Update()
+ 
+(Filename:  Line: -1)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.869779 ms
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 1373.
+Total: 1.586762 ms (FindLiveObjects: 0.103876 ms CreateObjectMapping: 0.071220 ms MarkObjects: 0.882951 ms  DeleteObjects: 0.527780 ms)
+
+Another Turret Purchased
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Missile Launcher Selected
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Missile Launcher Selected
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretBuild! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+TuretUpgrade! 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+IndexOutOfRangeException: Array index is out of range.
+  at WaveSpawner+<SpawnWave>c__Iterator0.MoveNext () [0x00000] in <filename unknown>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (IEnumerator enumerator, IntPtr returnValueAddress) [0x00000] in <filename unknown>:0 
+UnityEngine.MonoBehaviour:StartCoroutine_Auto_Internal(IEnumerator)
+UnityEngine.MonoBehaviour:StartCoroutine(IEnumerator)
+WaveSpawner:Update()
+ 
+(Filename:  Line: -1)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.594537 ms
+
+Unloading 277 unused Assets to reduce memory usage. Loaded Objects now: 671.
+Total: 2.635481 ms (FindLiveObjects: 0.071842 ms CreateObjectMapping: 0.051005 ms MarkObjects: 0.484239 ms  DeleteObjects: 2.027460 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.451272 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 695.
+Total: 0.457181 ms (FindLiveObjects: 0.045407 ms CreateObjectMapping: 0.024569 ms MarkObjects: 0.327802 ms  DeleteObjects: 0.058780 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.558570 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1373.
+Total: 0.828525 ms (FindLiveObjects: 0.074019 ms CreateObjectMapping: 0.054737 ms MarkObjects: 0.491703 ms  DeleteObjects: 0.207442 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.120872 ms
+
+Unloading 349 unused Assets to reduce memory usage. Loaded Objects now: 599.
+Total: 2.652897 ms (FindLiveObjects: 0.069976 ms CreateObjectMapping: 0.051627 ms MarkObjects: 0.372276 ms  DeleteObjects: 2.158395 ms)
+
+Exiting
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
